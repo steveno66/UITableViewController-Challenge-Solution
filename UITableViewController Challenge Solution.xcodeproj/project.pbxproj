@@ -14,13 +14,13 @@
 		52FC33A3198AD8E400767787 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FC33A2198AD8E400767787 /* main.m */; };
 		52FC33A7198AD8E400767787 /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FC33A6198AD8E400767787 /* TTAppDelegate.m */; };
 		52FC33AA198AD8E400767787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC33A8198AD8E400767787 /* Main.storyboard */; };
-		52FC33AD198AD8E400767787 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FC33AC198AD8E400767787 /* TTViewController.m */; };
 		52FC33AF198AD8E400767787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC33AE198AD8E400767787 /* Images.xcassets */; };
 		52FC33B6198AD8E500767787 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FC33B5198AD8E500767787 /* XCTest.framework */; };
 		52FC33B7198AD8E500767787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FC3396198AD8E400767787 /* Foundation.framework */; };
 		52FC33B8198AD8E500767787 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FC339A198AD8E400767787 /* UIKit.framework */; };
 		52FC33C0198AD8E500767787 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52FC33BE198AD8E500767787 /* InfoPlist.strings */; };
 		52FC33C2198AD8E500767787 /* UITableViewController_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FC33C1198AD8E500767787 /* UITableViewController_Challenge_SolutionTests.m */; };
+		52FC33CD198ADC6E00767787 /* TTChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FC33CC198ADC6E00767787 /* TTChallengeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		52FC33A5198AD8E400767787 /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
 		52FC33A6198AD8E400767787 /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		52FC33A9198AD8E400767787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		52FC33AB198AD8E400767787 /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
-		52FC33AC198AD8E400767787 /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
 		52FC33AE198AD8E400767787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52FC33B4198AD8E500767787 /* UITableViewController Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewController Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FC33B5198AD8E500767787 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		52FC33BD198AD8E500767787 /* UITableViewController Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewController Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		52FC33BF198AD8E500767787 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52FC33C1198AD8E500767787 /* UITableViewController_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewController_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		52FC33CB198ADC6E00767787 /* TTChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTChallengeTableViewController.h; path = ../TTChallengeTableViewController.h; sourceTree = "<group>"; };
+		52FC33CC198ADC6E00767787 /* TTChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTChallengeTableViewController.m; path = ../TTChallengeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				52FC33A5198AD8E400767787 /* TTAppDelegate.h */,
 				52FC33A6198AD8E400767787 /* TTAppDelegate.m */,
 				52FC33A8198AD8E400767787 /* Main.storyboard */,
-				52FC33AB198AD8E400767787 /* TTViewController.h */,
-				52FC33AC198AD8E400767787 /* TTViewController.m */,
+				52FC33CB198ADC6E00767787 /* TTChallengeTableViewController.h */,
+				52FC33CC198ADC6E00767787 /* TTChallengeTableViewController.m */,
 				52FC33AE198AD8E400767787 /* Images.xcassets */,
 				52FC339D198AD8E400767787 /* Supporting Files */,
 			);
@@ -200,6 +200,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Technotopia;
 				TargetAttributes = {
+					52FC3392198AD8E400767787 = {
+						DevelopmentTeam = KLD3G7WGQS;
+					};
 					52FC33B3198AD8E500767787 = {
 						TestTargetID = 52FC3392198AD8E400767787;
 					};
@@ -250,9 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FC33CD198ADC6E00767787 /* TTChallengeTableViewController.m in Sources */,
 				52FC33A7198AD8E400767787 /* TTAppDelegate.m in Sources */,
 				52FC33A3198AD8E400767787 /* main.m in Sources */,
-				52FC33AD198AD8E400767787 /* TTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewController Challenge Solution/UITableViewController Challenge Solution-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewController Challenge Solution/UITableViewController Challenge Solution-Info.plist";
@@ -390,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewController Challenge Solution/UITableViewController Challenge Solution-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewController Challenge Solution/UITableViewController Challenge Solution-Info.plist";

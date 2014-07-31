@@ -1,5 +1,5 @@
 //
-//  TTViewController.h
+//  TTChallengeTableViewController.h
 //  UITableViewController Challenge Solution
 //
 //  Created by macbookpro on 2014/07/31.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTViewController : UIViewController
+@interface TTChallengeTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *sectionsOfTable;
+
 
 @end
